@@ -84,3 +84,17 @@ Livro * buscarLivro(ListaLivros * lista, int livroId) {
     }
     return NULL;
 }
+Copy code
+void removerLivro(ListaLivros * lista, int livroId) {
+    ListaLivros * atual = lista;
+    while (atual->proximo != NULL) {
+        if (atual->proximo->livro->livroId == livroId) {
+            ListaLivros * remover = atual->proximo;
+            atual->proximo = remover->proximo;
+            free(remover->livro);
+            free(remover);
+            return;
+        }
+        atual = atual->proximo;
+    }
+}
