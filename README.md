@@ -7,7 +7,7 @@ Abaixo estão informações sobre as pessoas que criaram e desenvolveram esse pr
 | Nome          | GitHub        | 
 | ------------- | ------------- |
 | Camila Mendes Osterno  | @Camilaosterno  |
-| Caio Honório  | @lcaiozin  |
+| Caio Honório  | @1caiozin  |
 | João Pedro Tomaz  | @jptomazz  |
 | Breno Rodrigues  | @brenorodrigues900  |
 | João Victor Carneiro  | @joaovictorcarneirogarcia  |
