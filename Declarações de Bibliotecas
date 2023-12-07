@@ -128,3 +128,6 @@ void commInserir(ListaLivros * lista) {
     Livro * livro = criarLivro(livroId, titulo, autor, editora, copias);
     inserirLivro(lista, livro);
 }
+void commListar(ListaLivros * lista) {
+    listarLivros(lista);
+}
