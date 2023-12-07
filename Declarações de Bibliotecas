@@ -8,10 +8,12 @@ typedef struct {
     int livroId, copias;
     char titulo[100], autor[100], editora[100];
 } Livro;
+
 typedef struct ListaLivros {
     Livro * livro;
     struct ListaLivros * proximo;
 } ListaLivros;
+
 int gerarId(ListaLivros * lista) {
     int id = 1;
     ListaLivros * atual = lista->proximo;
@@ -25,6 +27,7 @@ int gerarId(ListaLivros * lista) {
     }
     return id;
 }
+
 Livro * criarLivro(int livroId, char titulo[], char autor[], char editora[], int copias) {
     Livro * livro = (Livro *) malloc(sizeof(Livro));
     livro->livroId = livroId;
