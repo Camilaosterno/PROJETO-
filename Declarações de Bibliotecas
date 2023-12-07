@@ -8,3 +8,7 @@ typedef struct {
     int livroId, copias;
     char titulo[100], autor[100], editora[100];
 } Livro;
+typedef struct ListaLivros {
+    Livro * livro;
+    struct ListaLivros * proximo;
+} ListaLivros;
