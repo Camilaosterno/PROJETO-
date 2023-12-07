@@ -3,3 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 #include <math.h>
+
+typedef struct {
+    int livroId, copias;
+    char titulo[100], autor[100], editora[100];
+} Livro;
