@@ -98,3 +98,16 @@ void removerLivro(ListaLivros * lista, int livroId) {
         atual = atual->proximo;
     }
 }
+void salvarLivros(ListaLivros * lista) {
+    FILE * arquivo = fopen("livros.txt", "w");
+    ListaLivros * atual = lista->proximo;
+    while (atual != NULL) {
+        fprintf(arquivo, "%d\n", atual->livro->livroId);
+        fprintf(arquivo, "%s\n", atual->livro->titulo);
+        fprintf(arquivo, "%s\n", atual->livro->autor);
+        fprintf(arquivo, "%s\n", atual->livro->editora);
+        fprintf(arquivo, "%d\n", atual->livro->copias);
+        atual = atual->proximo;
+    }
+    fclose(arquivo);
+}
