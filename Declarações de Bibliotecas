@@ -142,3 +142,9 @@ void commBuscar(ListaLivros * lista) {
     } 
     printf("Livro não encontrado!\n");
 }
+void commRemover(ListaLivros * lista) {
+    int livroId;
+    printf("Digite o ID do livro a ser removido: ");
+    scanf("%d", &livroId);
+    removerLivro(lista, livroId);
+}
