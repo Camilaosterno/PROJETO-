@@ -6,10 +6,10 @@ O Biblo é um sistema desenvolvido para simplificar e aprimorar a administraçã
 Abaixo estão informações sobre as pessoas que criaram e desenvolveram esse projeto em seu início. 
 | Nome          | GitHub        | 
 | ------------- | ------------- |
-| Camila Mendes Osterno  | Camilaosterno  |
-| Caio Honório  | lcaiozin  |
-| João Pedro Tomaz  | jptomazz  |
-| Breno Rodrigues  | brenorodrigues900  |
-| João Victor Carneiro  | joaovictorcarneirogarcia  |
-| Helysson Felipe  | helysson2004  |
+| Camila Mendes Osterno  | @Camilaosterno  |
+| Caio Honório  | @lcaiozin  |
+| João Pedro Tomaz  | @jptomazz  |
+| Breno Rodrigues  | @brenorodrigues900  |
+| João Victor Carneiro  | @joaovictorcarneirogarcia  |
+| Helysson Felipe  | @helysson2004  |
 
