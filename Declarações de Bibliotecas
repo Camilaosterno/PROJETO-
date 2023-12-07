@@ -25,3 +25,12 @@ int gerarId(ListaLivros * lista) {
     }
     return id;
 }
+Livro * criarLivro(int livroId, char titulo[], char autor[], char editora[], int copias) {
+    Livro * livro = (Livro *) malloc(sizeof(Livro));
+    livro->livroId = livroId;
+    strcpy(livro->titulo, titulo);
+    strcpy(livro->autor, autor);
+    strcpy(livro->editora, editora);
+    livro->copias = copias;
+    return livro;
+}
