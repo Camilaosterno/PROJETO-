@@ -84,7 +84,7 @@ Livro * buscarLivro(ListaLivros * lista, int livroId) {
     }
     return NULL;
 }
-Copy code
+
 void removerLivro(ListaLivros * lista, int livroId) {
     ListaLivros * atual = lista;
     while (atual->proximo != NULL) {
@@ -204,7 +204,7 @@ int main() {
     char comando;
 
     while (1) {
-        printf("Digite um comando: ");
+        printf("Digite um comando:\n");
         printf("(i) Inserir\n");
         printf("(l) Listar\n");
         printf("(b) Buscar\n");
@@ -216,7 +216,7 @@ int main() {
         scanf(" %c", &comando);
         getchar();
 
-switch (comando) {
+        switch (comando) {
             case 'i':
                 commInserir(lista);
                 break;
