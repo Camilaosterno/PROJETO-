@@ -51,3 +51,10 @@ void inserirLivro(ListaLivros * lista, Livro * livro) {
     novo->proximo = lista->proximo;
     lista->proximo = novo;
 }
+void listarLivros(ListaLivros * lista) {
+    ListaLivros * atual = lista->proximo;
+    while (atual != NULL) {
+        printf("Livro %d: %s\n", atual->livro->livroId, atual->livro->titulo);
+        atual = atual->proximo;
+    }
+}
