@@ -71,3 +71,13 @@ void editarLivro(ListaLivros * lista, int livroId, char titulo[], char autor[], 
         atual = atual->proximo;
     }
 }
+Livro * buscarLivro(ListaLivros * lista, int livroId) {
+    ListaLivros * atual = lista->proximo;
+    while (atual != NULL) {
+        if (atual->livro->livroId == livroId) {
+            return atual->livro;
+        }
+        atual = atual->proximo;
+    }
+    return NULL;
+}
