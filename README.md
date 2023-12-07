@@ -13,7 +13,7 @@ Abaixo estão informações sobre as pessoas que criaram e desenvolveram esse pr
 | João Victor Carneiro  | @joaovictorcarneirogarcia  |
 | Helysson Felipe  | @helysson2004  |
 
-# Utilizando a aplicação
+# Descrições e configurações
 O Biblo é um sistema de gerenciamento de biblioteca, implementado em C, que oferece funcionalidades essenciais para o controle eficiente de livros. O código é estruturado com a definição de uma estrutura Livro e uma lista encadeada ListaLivros para armazenar os livros cadastrados. Além disso, são implementadas operações como inserir, listar, buscar, editar, remover, emprestar e salvar livros.
 
 A estrutura Livro possui campos como livroId, copias, titulo, autor e editora, que representam informações relevantes de um livro. A lista encadeada ListaLivros é utilizada para armazenar e manipular os livros de forma dinâmica.
