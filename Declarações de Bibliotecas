@@ -159,6 +159,7 @@ void commSalvar(ListaLivros * lista) {
     salvarLivros(lista);
     printf("Livros salvos!\n");
 }
+
 void commEditar(ListaLivros * lista) {
     int livroId;
     char titulo[100], autor[100], editora[100];
@@ -178,6 +179,7 @@ void commEditar(ListaLivros * lista) {
 
     editarLivro(lista, livroId, titulo, autor, editora, copias);
 }
+
 void commEmprestar(ListaLivros * lista) {
     int livroId;
     printf("Digite o ID do livro que você quer emprestar: ");
@@ -194,6 +196,7 @@ void commEmprestar(ListaLivros * lista) {
     }
     printf("Não há cópias disponíveis!\n");
 }
+
 int main() {
     printf("Bem vindo ao Biblo!\n");
 
@@ -212,6 +215,7 @@ int main() {
         printf("(q) Sair\n");
         scanf(" %c", &comando);
         getchar();
+
 switch (comando) {
             case 'i':
                 commInserir(lista);
