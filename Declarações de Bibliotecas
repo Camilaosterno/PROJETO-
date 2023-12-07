@@ -178,3 +178,19 @@ void commEditar(ListaLivros * lista) {
 
     editarLivro(lista, livroId, titulo, autor, editora, copias);
 }
+void commEmprestar(ListaLivros * lista) {
+    int livroId;
+    printf("Digite o ID do livro que você quer emprestar: ");
+    scanf("%d", &livroId);
+    Livro * livro = buscarLivro(lista, livroId);
+    if (livro == NULL) {
+        printf("Livro não encontrado!\n");
+        return;
+    }
+    if (livro->copias > 0) {
+        livro->copias--;
+        printf("Livro emprestado com sucesso!\n");
+        return;
+    }
+    printf("Não há cópias disponíveis!\n");
+}
