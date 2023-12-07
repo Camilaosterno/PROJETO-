@@ -41,3 +41,10 @@ ListaLivros * criarListaLivros() {
     lista->proximo = NULL;
     return lista;
 }
+
+void inserirLivro(ListaLivros * lista, Livro * livro) {
+    ListaLivros * novo = criarListaLivros();
+    novo->livro = livro;
+    novo->proximo = lista->proximo;
+    lista->proximo = novo;
+}
