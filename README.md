@@ -7,3 +7,8 @@ O Biblo é um sistema desenvolvido para simplificar e aprimorar a administraçã
 | ------------- | ------------- |
 | Camila Mendes Osterno  | Camilaosterno  |
 | Caio Honório  | lcaiozin  |
+| João Pedro Tomaz  | jptomazz  |
+| Breno Rodrigues  | brenorodrigues900  |
+| João Victor Carneiro  | joaovictorcarneirogarcia  |
+| Helysson Felipe  | helysson2004  |
+
