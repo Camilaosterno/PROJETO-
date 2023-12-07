@@ -159,3 +159,22 @@ void commSalvar(ListaLivros * lista) {
     salvarLivros(lista);
     printf("Livros salvos!\n");
 }
+void commEditar(ListaLivros * lista) {
+    int livroId;
+    char titulo[100], autor[100], editora[100];
+    int copias;
+
+    printf("Digite ID do livro que deseja editar: ");
+    scanf("%d", &livroId);
+
+    printf("Digite o título do livro: ");
+    scanf("%s", titulo);
+    printf("Digite o autor do livro: ");
+    scanf("%s", autor);
+    printf("Digite a editora do livro: ");
+    scanf("%s", editora);
+    printf("Digite o número de cópias do livro: ");
+    scanf("%d", &copias);
+
+    editarLivro(lista, livroId, titulo, autor, editora, copias);
+}
