@@ -194,3 +194,4 @@ void commEmprestar(ListaLivros * lista) {
     }
     printf("Não há cópias disponíveis!\n");
 }
+
