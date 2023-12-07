@@ -98,6 +98,7 @@ void removerLivro(ListaLivros * lista, int livroId) {
         atual = atual->proximo;
     }
 }
+
 void salvarLivros(ListaLivros * lista) {
     FILE * arquivo = fopen("livros.txt", "w");
     ListaLivros * atual = lista->proximo;
@@ -111,6 +112,7 @@ void salvarLivros(ListaLivros * lista) {
     }
     fclose(arquivo);
 }
+
 void commInserir(ListaLivros * lista) {
     int livroId = gerarId(lista);
     char titulo[100], autor[100], editora[100];
@@ -128,9 +130,11 @@ void commInserir(ListaLivros * lista) {
     Livro * livro = criarLivro(livroId, titulo, autor, editora, copias);
     inserirLivro(lista, livro);
 }
+
 void commListar(ListaLivros * lista) {
     listarLivros(lista);
 }
+
 void commBuscar(ListaLivros * lista) {
     int livroId;
     printf("Digite o ID do livro a ser buscado: ");
@@ -142,9 +146,16 @@ void commBuscar(ListaLivros * lista) {
     } 
     printf("Livro não encontrado!\n");
 }
+
 void commRemover(ListaLivros * lista) {
     int livroId;
     printf("Digite o ID do livro a ser removido: ");
     scanf("%d", &livroId);
     removerLivro(lista, livroId);
+}
+
+void commSalvar(ListaLivros * lista) {
+    printf("Salvando livros no arquivo livros.txt\n");
+    salvarLivros(lista);
+    printf("Livros salvos!\n");
 }
