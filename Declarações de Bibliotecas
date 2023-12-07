@@ -12,3 +12,16 @@ typedef struct ListaLivros {
     Livro * livro;
     struct ListaLivros * proximo;
 } ListaLivros;
+int gerarId(ListaLivros * lista) {
+    int id = 1;
+    ListaLivros * atual = lista->proximo;
+    while (atual != NULL) {
+        if (atual->livro->livroId == id) {
+            id++;
+            atual = lista->proximo;
+        } else {
+            atual = atual->proximo;
+        }
+    }
+    return id;
+}
