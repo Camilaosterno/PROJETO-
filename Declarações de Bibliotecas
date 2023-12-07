@@ -194,4 +194,53 @@ void commEmprestar(ListaLivros * lista) {
     }
     printf("Não há cópias disponíveis!\n");
 }
+int main() {
+    printf("Bem vindo ao Biblo!\n");
 
+    ListaLivros * lista = criarListaLivros();
+    char comando;
+
+    while (1) {
+        printf("Digite um comando: ");
+        printf("(i) Inserir\n");
+        printf("(l) Listar\n");
+        printf("(b) Buscar\n");
+        printf("(r) Remover\n");
+        printf("(s) Salvar\n");
+        printf("(e) Editar\n");
+        printf("(m) Emprestar\n");
+        printf("(q) Sair\n");
+        scanf(" %c", &comando);
+        getchar();
+switch (comando) {
+            case 'i':
+                commInserir(lista);
+                break;
+            case 'l':
+                commListar(lista);
+                break;
+            case 'b':
+                commBuscar(lista);
+                break;
+            case 'r':
+                commRemover(lista);
+                break;
+            case 's':
+                commSalvar(lista);
+                break;
+            case 'e':
+                commEditar(lista);
+                break;
+            case 'm':
+                commEmprestar(lista);
+                break;
+            case 'q':
+                printf("Saindo...\n");
+                free(lista); // Libera a memória alocada para a lista antes de sair
+                return 0;
+            default:
+                printf("Comando inválido!\n");
+                break;
+        }
+    }
+}
