@@ -51,6 +51,7 @@ void inserirLivro(ListaLivros * lista, Livro * livro) {
     novo->proximo = lista->proximo;
     lista->proximo = novo;
 }
+
 void listarLivros(ListaLivros * lista) {
     ListaLivros * atual = lista->proximo;
     while (atual != NULL) {
@@ -58,6 +59,7 @@ void listarLivros(ListaLivros * lista) {
         atual = atual->proximo;
     }
 }
+
 void editarLivro(ListaLivros * lista, int livroId, char titulo[], char autor[], char editora[], int copias) {
     ListaLivros * atual = lista->proximo;
     while (atual != NULL) {
@@ -71,6 +73,7 @@ void editarLivro(ListaLivros * lista, int livroId, char titulo[], char autor[], 
         atual = atual->proximo;
     }
 }
+
 Livro * buscarLivro(ListaLivros * lista, int livroId) {
     ListaLivros * atual = lista->proximo;
     while (atual != NULL) {
